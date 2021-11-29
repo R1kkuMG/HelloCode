@@ -51,3 +51,15 @@ string Method4(int count, string text)
 }
 string res = Method4(10, "asdf");
 Console.WriteLine(res);
+
+string Method4(int count, string text)
+{
+    string result = String.Empty;
+    for(int i = 0; i < count; i++) // запись цикла без while, все условия в одной сроке: счетчик, условия для него и инкеремент
+    {
+        result = result + text;
+    }
+    return result;
+}
+string res = Method4(10, "asdf");
+Console.WriteLine(res);
